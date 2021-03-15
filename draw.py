@@ -19,23 +19,23 @@ cv.imshow('Blue', blank)
 
 
 # draw rectangle
-cv.rectangle(blank, (0,0), (250,250), (0,0,0), thickness=2) # black rectangle
-cv.imshow('Rectangle', blank)
+rectangle = cv.rectangle(blank, (0,0), (250,250), (0,0,0), thickness=2) # black rectangle
+cv.imshow('Rectangle', rectangle)
 
 
 # draw circle
-cv.circle(blank, (width//2, height//2), 30, (0,0,255), thickness=-1) # red circle
-cv.imshow('Circle', blank)
+circle = cv.circle(blank, (width//2, height//2), 30, (0,0,255), thickness=-1) # red circle
+cv.imshow('Circle', circle)
 
 
 # draw line
-cv.line(blank, (0,0), (250,250), (0,0,0), thickness=2) # black line
-cv.imshow('Line', blank)
+line = cv.line(blank, (0,0), (250,250), (0,0,0), thickness=2) # black line
+cv.imshow('Line', line)
 
 
 # write text
-cv.putText(blank, 'Hoopla', (100,100), cv.FONT_HERSHEY_TRIPLEX, 1.0, (225,0,0), 2) # text
-cv.imshow('Text', blank)
+text = cv.putText(blank, 'Hoopla', (100,100), cv.FONT_HERSHEY_TRIPLEX, 1.0, (225,0,0), 2) # text
+cv.imshow('Text', text)
 
 
 cv.waitKey(0)
